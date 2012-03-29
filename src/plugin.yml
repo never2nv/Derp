@@ -7,6 +7,9 @@ commands:
      derp:
               description: Derp your crosshairs or another player, globally!
               permission: derp.derp
+     derpy:
+              description: Derp your crosshairs or another player, globally!
+              permission: derp.derpy
      starve:
               description: Starve a player or yourself!
               permission: derp.derp
@@ -15,9 +18,13 @@ permissions:
     description: Gives access to all Derp Strike commands
     children:
       derp.derp
+      derp.derpy
       derp.starve
   derp.derp:
     description: Allows you to globally derp a player.
+    default: op
+  derp.derpy:
+    description: Allows you to globally derp a player w/ global reply.
     default: op
   derp.starve:
     description: Starve yourself or a player, not to death.

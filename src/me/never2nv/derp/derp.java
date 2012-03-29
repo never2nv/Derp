@@ -52,7 +52,7 @@ public class derp extends JavaPlugin {
 				world.strikeLightning(location);
 				world.createExplosion(location, 2);
 				getServer().broadcastMessage(player.getDisplayName() + " is furious at all the derps on the server currently!");
-				getServer().broadcastMessage("He has show his true power through his rage! " + ChatColor.RED + "                           DID YOU HEAR THE ROAR?!");
+				getServer().broadcastMessage("He has show his true power through his rage! " + ChatColor.RED + "                                DID YOU HEAR THE ROAR?!");
 		}
 			else if (args.length == 1){
 				if(player.getServer().getPlayer(args[0]) != null){
@@ -99,6 +99,29 @@ public class derp extends JavaPlugin {
 				return false;
 			}
 			
+			public boolean onCommand2(CommandSender sender, Command cmd, String commandLabel, String[] args) {
+				Player player = (Player) sender;
+				World world = player.getWorld();
+				if(commandLabel.equalsIgnoreCase("derpy") ){
+					
+					if(args.length == 0){
+						Block targetblock = player.getTargetBlock(null, 50);
+						Location location = targetblock.getLocation();
+						world.strikeLightning(location);
+						world.createExplosion(location, 2);
+						getServer().broadcastMessage(player.getDisplayName() + " is furious at all the derps on the server currently!");
+						getServer().broadcastMessage("He has show his true power through his rage! " + ChatColor.RED + "                                DID YOU HEAR THE ROAR?!");
+						for(Player p : getServer().getOnlinePlayers())
+						{
+						    p.chat("What a derp!");
+						}
+						
+				}
+			
 }
+				return false;
+			}
+		}
+	
 
 
