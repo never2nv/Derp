@@ -61,7 +61,7 @@ public class derp extends JavaPlugin {
 					world.strikeLightning(location);
 					world.createExplosion(location, 2);
 					player.sendMessage(ChatColor.BLUE + "Derping " + targetplayer.getDisplayName() + " and letting everyone know it.");
-					getServer().broadcastMessage(ChatColor.RED + "DERP! " + ChatColor.GREEN + "The couragious stupdity of " + targetplayer.getDisplayName() + " is beyond comprehension!");
+					getServer().broadcastMessage(ChatColor.RED + "DERP! " + ChatColor.GREEN + "The couragious derping of " + targetplayer.getDisplayName() + " is beyond comprehension!");
 				}
 				else {
 					player.sendMessage(ChatColor.RED + "SORRY! Player is offline! >:0");
@@ -99,6 +99,7 @@ public class derp extends JavaPlugin {
 				return false;
 			}
 			
+			// Global Chat Derping of player. Makes everyone in the chatroom say "What a derp!" :P
 			public boolean onCommand2(CommandSender sender, Command cmd, String commandLabel, String[] args) {
 				Player player = (Player) sender;
 				World world = player.getWorld();
