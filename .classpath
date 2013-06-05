@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="devbuilds/Derp-1.0.jar"/>
+	<classpathentry kind="lib" path="devbuilds/Derp-Custom.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/Mathias/Desktop/Programmer/Minecraft Modding/Bukkit/bukkit-1.5.2-R0.2-20130528.060101-8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
